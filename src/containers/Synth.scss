@@ -1,0 +1,36 @@
+.wrapper {
+  width: auto;
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 10px;
+  width: 250px;
+  margin: 0 25px;
+  > div {
+    opacity: 0;
+  }
+}
+
+.active {
+  $elements: 15;
+  @for $i from 0 to $elements {
+    > div:nth-child(#{$i}) {
+      animation: showup 0.5s ease-in-out $i * 0.1s forwards;
+    }
+  }
+}

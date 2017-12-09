@@ -1,0 +1,37 @@
+@import "../scss/_colors.scss";
+
+$thumb-size: 5px;
+$track-height: 5px;
+
+@mixin track($color, $height) {
+  background: $color;
+  height: $height;
+}
+
+@mixin thumb($color, $size) {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  background-color: $color;
+  height: $size;
+  width: $size;
+  border-radius: $size;
+  margin-top: -$size / 2.3;
+  cursor: pointer;
+}
+
+.container {
+}
+
+.range {
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0.5);
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    height: 10px;
+    width: 5px;
+    cursor: pointer;
+  }
+}

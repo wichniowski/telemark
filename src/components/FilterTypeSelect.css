@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  button {
+    transition: all 0.5s;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+  }
+
+  .active {
+    background: white;
+  }
+
+  button:nth-child(1) {
+    mask: url("/waveforms/lowpass.svg");
+    mask-size: 30px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  button:nth-child(2) {
+    mask: url("/waveforms/bandpass.svg");
+    mask-size: 40px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  button:nth-child(3) {
+    mask: url("/waveforms/highpass.svg");
+    mask-size: 30px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}

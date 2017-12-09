@@ -1,0 +1,75 @@
+@import "../scss/mixins";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  @include shadow(2);
+}
+
+.whiteKeys,
+.blackKeys {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    flex-basis: 100%;
+    border: none;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+
+.blackKeys {
+  background: rgba(0, 0, 0, 0.4);
+  button {
+    background: transparent;
+  }
+
+  button:active,
+  button:hover,
+  .active {
+    background: black;
+  }
+}
+
+.whiteKeys {
+  background: rgba(255, 255, 255, 0.4);
+  button {
+    background: transparent;
+  }
+
+  button:active,
+  button:hover {
+    background: white;
+  }
+
+  .active {
+    background: white;
+  }
+}
+
+.octaveButton {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  left: -35px;
+  font-size: 20px;
+  top: 60px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.rightButton {
+  right: -35px;
+  left: auto;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin: 15px 0;
+
+  button {
+    border: none;
+    flex-basis: 100%;
+    height: 25px;
+    background: transparent;
+    outline: none;
+  }
+}

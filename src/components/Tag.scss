@@ -1,0 +1,26 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  p {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  img {
+    width: 80px;
+    min-width: 80px;
+    animation: rotate 60s linear infinite;
+  }
+}

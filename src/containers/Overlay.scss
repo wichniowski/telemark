@@ -1,0 +1,54 @@
+.overlay {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  .outerWrapper {
+    width: 50%;
+  }
+}
+
+.cta {
+  display: inline-block;
+  margin-right: 15px;
+  border: 1px solid black;
+  background: none;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+}
+
+.innerWrapper {
+  max-width: 450px;
+  margin: 50px 50px 50px 0px;
+
+  h1 {
+    color: black;
+    font-weight: 300;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 24px;
+  color: black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
