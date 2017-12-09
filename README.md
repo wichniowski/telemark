@@ -1,5 +1,7 @@
 # Telemark.io
 
+[https://telemark.io](telemark.io)
+
 Telemark.io is a drone instrument and crowd sourced radio for atmospheres and
 noises. The Application was build using the Webaudio API and React. Start by
 setting up a synth rack adding as many oscillators your browser can handle and
@@ -13,5 +15,6 @@ listen to your and all other drones created with Telemark.
 ```
 $ yarn install
 $ yarn start
-``
+
+Visit localhost:5000
 ```
