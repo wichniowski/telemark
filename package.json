@@ -50,9 +50,9 @@
     "file-saver": "^1.3.3",
     "firebase": "^3.9.0",
     "project-name-generator": "^2.1.3",
-    "react": "^15.5.4",
+    "react": "^16.0.0",
     "react-alert": "^2.2.0",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.0.0",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.2.2",
     "reactfire": "^1.0.0",
@@ -63,8 +63,7 @@
     "serve": "^6.4.1",
     "smoothscroll": "^0.3.0",
     "songbird-audio": "^0.0.2",
-    "soundbank-reverb": "^1.1.2",
-    "soundcloud": "^3.2.1"
+    "soundbank-reverb": "^1.1.2"
   },
   "scripts": {
     "dev": "node scripts/start.js",
